@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <h1>Formulário</h1>
+
+    <h3>Formulário com GET</h3>
+    <form method="get" action="index.html">
+        <input type="text" name="q">
+        <input type="submit" value="Enviar">
+    </form>
+    <h3>Formulário com POST</h3>
+    <form method="post" action="index.html">
+        <input type="text" name="q">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h1>Mini Exercício</h1>
+
+    <div class="inicio">
+        <h2>Cadastre-se</h4>
+            <p>É rápido e fácil</p>
+    </div>
+
+    <form method="get" action="index.html">
+        <input type="text" placeholder="Nome">
+        <input type="text" placeholder="Sobrenome">
+        <br>
+        <br>
+        <input type="text" placeholder="Celular ou email">
+        <br>
+        <br>
+        <input type="password" name="senha" placeholder="Nova Senha">
+        <p>Data de nascimento</p>
+        <select name="dia" id="dia">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10" 10></option>
+        </select>
+        <select name="mes" id="mes">
+            <option value="jan">jan</option>
+            <option value="fev">fev</option>
+            <option value="mar">mar</option>
+            <option value="abr">abr</option>
+            <option value="mai">mai</option>
+            <option value="jun">jun</option>
+            <option value="jul">jul</option>
+            <option value="ago">ago</option>
+            <option value="set">set</option>
+            <option value="out">out</option>
+            <option value="nov">nov</option>
+            <option value="dez">dez</option>
+        </select>
+        <input type="number" name="" id="" value="2007">
+        <br>
+        <p>Gênero</p>
+        <div class="genero">
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero">
+        </div>
+        <div class="genero">
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero">
+        </div>
+        <div class="genero">
+            <label for="personalizado">Personalizado</label>
+            <input type="radio" id="personalizado" name="genero">
+        </div>
+<br>
+<br>
+        <input type="button" value="Cadastre-se">
+    </form>
+</body>
+
+</html>

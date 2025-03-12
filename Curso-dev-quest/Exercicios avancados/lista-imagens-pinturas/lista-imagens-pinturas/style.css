@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'public sans', sans-serif;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.coletania{
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imagens{
+    position: relative;
+    display: flex;
+    align-items: end;
+}
+
+.informacoes{
+    position: absolute;
+    color: white;
+    padding-bottom: 2em;
+    padding-left: 1em;
+}
+
+.nome-obra{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.autor{
+    font-size: 17px;
+    font-weight: 300;
+}
+
+img{
+    width: 335px;
+    height: 431.18px;
+}

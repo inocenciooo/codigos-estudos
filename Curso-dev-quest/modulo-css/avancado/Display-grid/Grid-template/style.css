@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    display: grid;
+    grid-template: repeat(3, auto)/ repeat(5, auto);
+}
+
+.um{
+    background-color: #329887;
+    grid-row: 1 / span 2;
+    grid-column: 1 / span 2;
+}
+.dois{
+    background-color: #4DACC2;
+    grid-column: 3 / span 5;
+}
+.tres{
+    background-color: #A6554F;
+    grid-row: 2 / span 3;
+    grid-column: 3 / span 4;
+}
+.quatro{
+    background-color: #355D68;
+}
+.cinco{
+    background-color: #BF5B9F;
+    grid-row: 3;
+    grid-column: 1 / span 2;
+}
+.seis{
+    background-color: #6F6462;
+}

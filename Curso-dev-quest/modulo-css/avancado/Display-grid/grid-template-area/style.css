@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    background-color: aquamarine;
+    grid-area: cabecalho;
+}
+.menu{
+    background-color: cornflowerblue;
+    grid-area: menu;
+}
+.secao-principal{
+    background-color:hotpink;
+    grid-area: secao-principal;
+}
+.aside{
+    background-color:orangered;
+    grid-area: aside;
+}
+.rodape{
+    background-color:green;
+    grid-area: rodape;
+}
+
+.container{
+    display: grid;
+    grid: 
+    "cabecalho cabecalho cabecalho" 5vh
+    "menu secao-principal aside" 85vh
+    "rodape rodape rodape" 10vh / 10vw 80vw 10vw; 
+}

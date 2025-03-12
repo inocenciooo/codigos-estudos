@@ -1,0 +1,24 @@
+html{
+    background-color: #cccd;
+}
+
+/* 1em = 16px  - seta o tamanho com base na tag superior.*/
+/* já o rem seta o tamanho com base na tag raiz, sendo a html.*/
+
+body{
+    background-color: blueviolet;
+    width: 50%;
+    font-size: 2em;
+}
+
+.pai{
+    background-color: #ea80fc;
+    width: 50%;
+    font-size: 2em;
+}
+
+.filho{
+    background-color: #1de9b6;
+    width: 50%;
+    font-size: 2em;
+}

@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+}
+p{
+    margin: 20px;
+    padding: 10px;
+    background-color: aquamarine;
+    border: 2px solid black
+}
+
+/* margins é espaçamento entre elementos e padding é o espaçamento do próprio elemento em relalação à borda */
