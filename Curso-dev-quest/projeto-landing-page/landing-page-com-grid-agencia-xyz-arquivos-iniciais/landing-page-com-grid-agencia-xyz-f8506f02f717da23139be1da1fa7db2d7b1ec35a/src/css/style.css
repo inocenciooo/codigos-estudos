@@ -42,12 +42,116 @@ body{
 
 .hero{
     grid-area: hero;
-    background-color: blueviolet;
+    height: 89vh;
+    background: url('../images/lemons.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
+
+.hero h2{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.hero:after{
+    content: url('../images/seta_preta.png');
+    position: absolute;
+    height: 3.5rem;
+    bottom: 4rem;
+    animation: downarrow 0.5s infinite alternate ease-in-out;
+}
+
+
+@-webkit-keyframes downarrow{
+    0% {-webkit-transform: translateY(0); opacity: 0.5;}
+    100% {-webkit-transform: translateY(0.4em); opacity: 0.9;}
+}
+
+@media(max-width: 600px){
+    .hero{
+        height: 60vh;
+    }
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    .about .item{
+        text-align: center;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+}
+
+
 .about{
     grid-area: about;
-    background-color: brown;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #fff;
+    max-width: var(--max-width-size);
+    margin: 0 auto;
 }
+
+.about .item{
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.about .item h3{
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.about .item p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.about .image {
+    height: 100%;
+    width: 100%;
+}
+
+.about .item .btn-know-more{
+    font-size: 1.6rem;
+    align-self: flex-start;
+}
+
+.about .item .btn-know-more:hover{
+    font-weight: 700;
+}
+
+
+.about .right{
+    background: url('../images/bridge.jpg') center center no-repeat;
+    background-size: cover;
+}
+.about .left{
+    background: url('../images/sky.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+@media(max-width: 600px){
+    .about .item{
+        text-align: center;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+}
+
 .services{
     grid-area: services;
     background-color: tomato;
