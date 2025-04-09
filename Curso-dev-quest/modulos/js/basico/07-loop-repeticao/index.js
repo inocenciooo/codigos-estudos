@@ -6,11 +6,10 @@
 
     // Com o for
     // Irá repetir ater atingir a condição
-/*
+
 for (let i = 0; i < 5; i++) {
     console.log('O número atual é: ' + i)
 }
-*/
 
     //Com While
     //Enquanto for verdadeiro irá ser executado

@@ -5,5 +5,5 @@ let hospedagem = confirm(
 if (hospedagem) {
   alert("Ótimo! Nós temos as melhores camas de toda a região!");
 } else {
-  alert("Que pena! Você parecia seruma pessoa mais legal.");
+  alert("Que pena! Você parecia ser uma pessoa mais legal.");
 }
