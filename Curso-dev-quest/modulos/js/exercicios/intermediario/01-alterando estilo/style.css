@@ -1,0 +1,10 @@
+div {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  margin: 1rem 0;
+}
+
+.azul {
+  background-color: blue;
+}
