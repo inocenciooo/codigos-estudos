@@ -1,0 +1,13 @@
+div {
+  height: 250px;
+  width: 250px;
+  margin: 1rem 0;
+}
+
+.preto {
+  background-color: black;
+}
+
+.azul{
+    background-color: blue;
+}
