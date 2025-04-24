@@ -1,10 +1,75 @@
-*{
-    margin: 0;
-    padding:0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  background: url(src/images/imagem1.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+img {
+  width: 100%;
+}
+main {
+  display: grid;
+  grid-template-columns: 10vw 80vw 10vw;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-areas:
+    ". . ."
+    "back section foward"
+    ". . .";
 }
 
-main {
-    background-color: red;
-    background: url(src/images/imagem1.jpg) center no-repeat;
+.button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3.5vw;
+}
+.back {
+  grid-area: back;
+  transform: scaleX(-1);
+}
+
+section {
+  grid-area: section;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.card {
+  background-color: white;
+  font-family: "Roboto";
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.card h1 {
+  font-size: 50px;
+  line-height: 100%;
+  font-weight: 400;
+}
+.card p {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 300;
+}
+
+.card p a {
+  font-size: 30px;
+  line-height: 100%;
+  font-weight: 700;
+}
+
+.cor-vermelha {
+  color: #c50000;
+}
+
+.forward {
+  grid-area: foward;
 }
