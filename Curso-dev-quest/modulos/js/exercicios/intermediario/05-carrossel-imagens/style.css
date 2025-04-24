@@ -10,6 +10,9 @@ body {
   background-size: cover;
   height: 100vh;
 }
+
+
+
 img {
   width: 100%;
 }
@@ -29,8 +32,9 @@ main {
   justify-content: center;
   align-items: center;
   padding: 0 3.5vw;
+  cursor: pointer;
 }
-.back {
+#back {
   grid-area: back;
   transform: scaleX(-1);
 }
@@ -59,17 +63,30 @@ section {
   line-height: 35px;
   font-weight: 300;
 }
+#forward {
+  grid-area: foward;
+}
 
-.card p a {
+
+#saiba-mais{
   font-size: 30px;
   line-height: 100%;
   font-weight: 700;
 }
 
-.cor-vermelha {
-  color: #c50000;
+
+.tema-rosa{
+  color: #C50000;
 }
 
-.forward {
-  grid-area: foward;
+.tema-amarelo{
+  color: #D9DD10;
+}
+
+.tema-laranja{
+  color: #A63A17;
+}
+
+.tema-azul{
+  color: #10ACDD;
 }
