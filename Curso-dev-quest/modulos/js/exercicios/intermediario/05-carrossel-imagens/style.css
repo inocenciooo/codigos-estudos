@@ -6,7 +6,7 @@
   text-decoration: none;
 }
 body {
-  background: url(src/images/imagem1.jpg) no-repeat center;
+  background-color: #A63A17;
   background-size: cover;
   height: 100vh;
 }
@@ -15,6 +15,7 @@ body {
 
 img {
   width: 100%;
+  cursor: pointer;
 }
 main {
   display: grid;
@@ -32,8 +33,9 @@ main {
   justify-content: center;
   align-items: center;
   padding: 0 3.5vw;
-  cursor: pointer;
 }
+
+
 #back {
   grid-area: back;
   transform: scaleX(-1);
@@ -74,9 +76,14 @@ section {
   font-weight: 700;
 }
 
+/* CLASSES APLICADAS COM JS */
+
+.fim-das-imagens{
+  opacity: 50%;
+}
 
 .tema-rosa{
-  color: #C50000;
+  color: #c04270;
 }
 
 .tema-amarelo{
@@ -89,4 +96,19 @@ section {
 
 .tema-azul{
   color: #10ACDD;
+}
+
+.fundo-rosa{
+  background: url(src/images/imagem1.jpg) center no-repeat;
+}
+.fundo-amarelo{
+  background: url(src/images/imagem2.jpg) center no-repeat;
+}
+
+.fundo-laranja{
+  background: url(src/images/imagem3.jpg) center no-repeat;
+}
+
+.fundo-azul{
+  background: url(src/images/imagem4.jpg) center no-repeat;
 }
