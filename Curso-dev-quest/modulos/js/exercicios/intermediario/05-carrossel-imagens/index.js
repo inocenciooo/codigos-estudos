@@ -13,50 +13,36 @@ let imagemDeFundo = [
   "fundo-azul",
 ];
 
-i = 1;
+i = 0;
 
 saibaMais.classList.add(temas[0]);
 fundoImagem.classList.add(imagemDeFundo[0]);
+botaoVoltar.classList.add("fim-das-imagens");
 
 botaoAvancar.addEventListener("click", function () {
-  if (i < temas.length) {
+  if (i == temas.length - 2) {
+    botaoAvancar.classList.add("fim-das-imagens");
+  }
+  if (i < temas.length - 1) {
+    i++;
     saibaMais.classList.replace(temas[i - 1], temas[i]);
     fundoImagem.classList.replace(imagemDeFundo[i - 1], imagemDeFundo[i]);
+    botaoVoltar.classList.remove("fim-das-imagens");
     console.log(i);
-    i++;
-  } else {
   }
 });
 
 botaoVoltar.addEventListener("click", function () {
+  if (i == 1) {
+    botaoVoltar.classList.add("fim-das-imagens");
+  }
   if (i > 0) {
-    saibaMais.classList.replace(temas[i], temas[i - 1]);
-  }
-});
-
-/* 
-botaoAvancar.addEventListener("click", function () {
-  if (temas[i] !== undefined) {
-    saibaMais.classList.replace(temas[i - 1], temas[i]);
-    fundoImagem.classList.replace(imagemDeFundo[i - 1], imagemDeFundo[i]);
-    i++;
-    console.log(imagemDeFundo[i]);
-  } else {
-    saibaMais.classList.remove(temas[i - 1]);
-    saibaMais.classList.add(temas[0]);
-
-    fundoImagem.classList.remove(imagemDeFundo[i - 1]);
-    fundoImagem.classList.add(imagemDeFundo[0]);
-    i = 1;
-  }
-});
-
-botaoVoltar.addEventListener("click", function () {
-  if (temas[i] > 0) {
-    saibaMais.classList.replace(temas + 1, temas[i]);
-    fundoImagem.classList.replace(imagemDeFundo[i + 1], imagemDeFundo[i]);
     i--;
+    saibaMais.classList.replace(temas[i + 1], temas[i]);
+    fundoImagem.classList.replace(imagemDeFundo[i + 1], imagemDeFundo[i]);
+    botaoAvancar.classList.remove("fim-das-imagens");
+    console.log(i);
+  } else {
+    botaoVoltar.classList.add("fim-das-imagens");
   }
 });
-
-*/

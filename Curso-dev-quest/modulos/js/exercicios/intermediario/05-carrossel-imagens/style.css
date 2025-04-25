@@ -5,16 +5,13 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+html,
 body {
-  background-color: #A63A17;
-  background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-
-
 img {
-  width: 100%;
+  height: 100px;
   cursor: pointer;
 }
 main {
@@ -35,7 +32,6 @@ main {
   padding: 0 3.5vw;
 }
 
-
 #back {
   grid-area: back;
   transform: scaleX(-1);
@@ -43,8 +39,9 @@ main {
 
 section {
   grid-area: section;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -54,6 +51,9 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  text-align: justify;
+  height: 700px;
+  width: 600px;
 }
 .card h1 {
   font-size: 50px;
@@ -69,8 +69,7 @@ section {
   grid-area: foward;
 }
 
-
-#saiba-mais{
+#saiba-mais {
   font-size: 30px;
   line-height: 100%;
   font-weight: 700;
@@ -78,37 +77,41 @@ section {
 
 /* CLASSES APLICADAS COM JS */
 
-.fim-das-imagens{
+.fim-das-imagens {
   opacity: 50%;
 }
 
-.tema-rosa{
+.tema-rosa {
   color: #c04270;
 }
 
-.tema-amarelo{
-  color: #D9DD10;
+.tema-amarelo {
+  color: #d9dd10;
 }
 
-.tema-laranja{
-  color: #A63A17;
+.tema-laranja {
+  color: #a63a17;
 }
 
-.tema-azul{
-  color: #10ACDD;
+.tema-azul {
+  color: #10acdd;
 }
 
-.fundo-rosa{
-  background: url(src/images/imagem1.jpg) center no-repeat;
+.fundo-rosa {
+  background: url(src/images/imagem1.jpg) no-repeat center center;
+  background-size: cover;
 }
-.fundo-amarelo{
-  background: url(src/images/imagem2.jpg) center no-repeat;
-}
-
-.fundo-laranja{
-  background: url(src/images/imagem3.jpg) center no-repeat;
+.fundo-amarelo {
+  background: url(src/images/imagem2.jpg) no-repeat center center;
+  background-size: cover;
 }
 
-.fundo-azul{
-  background: url(src/images/imagem4.jpg) center no-repeat;
+.fundo-laranja {
+  background: url(src/images/imagem3.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.fundo-azul {
+  background: url(src/images/imagem4.jpg) no-repeat center center;
+  background-size: cover;
 }
