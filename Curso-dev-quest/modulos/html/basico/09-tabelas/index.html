@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Aula de tabela</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Promoção</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Produto 1</td>
+                <td>2</td>
+                <td>$5</td>
+                <td>Sim</td>
+            </tr>
+            <tr>
+                <td>Produto 2</td>
+                <td>14</td>
+                <td>$7</td>
+                <td>Não</td>
+            </tr>
+            <tr>
+                <td>Produto 3</td>
+                <td>12</td>
+                <td>$10</td>
+                <td>Sim</td>
+            </tr>
+            <tr>
+                <td>Produto 4</td>
+                <td>4</td>
+                <td>$20</td>
+                <td>Não</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>
+                    R$42
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <h2>Ocupando 2 espaços</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Promoção</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Produto 1</td>
+                <td>2</td>
+                <td>$5</td>
+                <td rowspan="3">Sim</td>
+            </tr>
+            <tr>
+                <td>Produto 2</td>
+                <td>3</td>
+                <td>$7</td>
+            </tr>
+            <tr>
+                <td>Produto 3</td>
+                <td>12</td>
+                <td>$10</td>
+            </tr>
+            <tr>
+                <td>Produto 4</td>
+                <td>4</td>
+                <td>$20</td>
+                <td>Não</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

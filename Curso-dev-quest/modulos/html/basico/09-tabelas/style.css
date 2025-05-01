@@ -1,0 +1,15 @@
+table{
+    border: solid 2px black;
+}
+
+th{
+    border: solid 2px red;
+}
+
+td{
+    border: solid 2px blue;
+}
+
+tfoot{
+    background-color: aqua;
+}
