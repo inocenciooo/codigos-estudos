@@ -1,0 +1,1 @@
+const inputPreenchido = document.getElementById

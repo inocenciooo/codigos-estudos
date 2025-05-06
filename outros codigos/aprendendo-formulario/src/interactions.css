@@ -1,0 +1,7 @@
+.form a {
+    opacity: 1;
+}
+.form-content.error a, input{
+    border-color:#DC143C;
+    color: #DC143C;
+}
