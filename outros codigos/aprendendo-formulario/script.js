@@ -1,62 +1,66 @@
-const form = document.getElementById("form");
 const username = document.getElementById("username");
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const passwordConfirmation = document.getElementById("password-confirmation");
-const submit = document.getElementById("submit");
+const form = document.getElementById("form");
+
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   checarUsername();
-  checarPassword();
   checarEmail();
-  checarConfirmacaoSenha();
+  checarSenha();
+  checarConfirmacao();
 });
 
 function checarUsername() {
-  const usernameValue = username.value;
-
-  if (usernameValue === "") {
-    erroInput(username, "Você precisa informar um nome de usuário.");
+  if (username.value === "") {
+    erro(username, "Insira um nome de usuário.");
   } else {
     username.parentElement.className = "form-content";
   }
+  preenchido(username);
 }
 
 function checarEmail() {
-  const emailValue = email.value;
-
-  if (emailValue === "") {
-    erroInput(email, "O campo de e-mail é obrigatório.");
+  if (email.value === "") {
+    erro(email, "Preencha um E-mail.");
   } else {
     email.parentElement.className = "form-content";
   }
+  preenchido(email);
 }
 
-function checarPassword() {
-  const passwordValue = password.value;
-
-  if (passwordValue === "") {
-    erroInput(password, "A senha não pode ficar em branco.");
-  } else if (passwordValue.length < 6) {
-    erroInput(password, "Informe uma senha com pelo menos 6 caracteres.");
+function checarSenha() {
+  if (password.value === "") {
+    erro(password, "Escolha uma senha.");
+  } else if (password.value.length < 8) {
+    erro(password, "Escreva uma senha maior que 8 caracteres.");
   } else {
     password.parentElement.className = "form-content";
   }
+  preenchido(password);
 }
 
-function checarConfirmacaoSenha() {
-  const confimacaoSenhaValue = passwordConfirmation.value;
-
-  if (confimacaoSenhaValue === "") {
-    erroInput(confimacaoSenhaValue, "Por favor, confirme sua senha.");
+function checarConfirmacao() {
+  if (passwordConfirmation.value === "") {
+    erro(passwordConfirmation, "Confirme a sua senha.");
+  } else if (passwordConfirmation.value !== password.value) {
+    erro(passwordConfirmation, "A senha está diferente.");
+  } else {
+    passwordConfirmation.parentElement.className = "form-content";
   }
+  preenchido(passwordConfirmation);
 }
 
-function erroInput(input, message) {
-  const formItem = input.parentElement;
-  const textMessage = formItem.querySelector("a");
+function erro(input, message) {
+  const mensagemErro = input.parentElement.querySelector("a");
+  input.parentElement.className = "form-content error";
+  mensagemErro.innerText = message;
+}
 
-  textMessage.innerText = message;
-  formItem.className = "form-content error";
+function preenchido(input) {
+  input.addEventListener("blur", () => {
+    input.parentElement.className = "form-content";
+  });
 }
