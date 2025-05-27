@@ -4,12 +4,7 @@
 
 function imprimirPessoa(nome, sobreNome, idade) {
   return console.log(
-    "Bem vindo " +
-      nome +
-      ", com o sobrenome de " +
-      sobreNome +
-      " e idade de " +
-      idade
+    "Bem vindo " + nome +", com o sobrenome de " + sobreNome + " e idade de " + idade
   );
 }
 

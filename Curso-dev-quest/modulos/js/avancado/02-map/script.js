@@ -3,8 +3,8 @@
 
 const pessoas = [
   { nome: "Roberto", idade: 19 },
-  { nome: "Roberto", idade: 22 },
-  { nome: "Roberto", idade: 16 },
+  { nome: "Carlos", idade: 22 },
+  { nome: "Silva", idade: 16 },
 ];
 
 let nomePessoas = pessoas.map((pessoa) => {

@@ -27,6 +27,7 @@ console.log(`${nomePessoa},${sobreNome},${idade}`);
 
 const numeros = [1, 2, 3, 4];
 
+
 const [um, dois, tres, quatro] = numeros;
 
 console.log(`${um},${dois},${tres},${quatro}`);
