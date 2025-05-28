@@ -35,13 +35,13 @@ let irBanheiro = (banheiro) => {
 };
 
 despertar = true;
-toalha = true;
+toalha = false;
 banheiro = true;
 
 async function tomarBanho() {
-  const despertado = await acordado(despertar);
-  const toalhaPega = await pegarToalha(despertado);
-  const estouBanheiro = await irBanheiro(toalhaPega);
+  await acordado(despertar);
+  await pegarToalha(toalha);
+  const estouBanheiro = await irBanheiro(banheiro);
   if (estouBanheiro) console.log("Banho iniciado.");
 }
 
